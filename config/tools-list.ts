@@ -23,4 +23,45 @@ export const toolsList = [
     description: "Get a programming joke",
     parameters: {},
   },
+  {
+    name: "sms_generate",
+    description: "Generate a short SMS message under 160 characters for a specific persona and purpose",
+    parameters: {
+      persona: {
+        type: "string",
+        description: "The target persona or audience (e.g., 'students', 'professionals', 'parents')",
+      },
+      prompt: {
+        type: "string",
+        description: "The message content or campaign goal to generate SMS for",
+      },
+    },
+  },
+  {
+    name: "sms_classify",
+    description: "Classify SMS content into compliance categories to ensure regulatory compliance",
+    parameters: {
+      message: {
+        type: "string",
+        description: "The SMS message text to classify",
+      },
+    },
+  },
+  {
+    name: "sms_send",
+    description: "Send SMS message via Semaphore API to specified recipients",
+    parameters: {
+      message: {
+        type: "string",
+        description: "The SMS message content to send",
+      },
+      recipients: {
+        type: "array",
+        items: {
+          type: "string",
+        },
+        description: "Array of phone numbers to send the SMS to (format: +63917xxxxxxx)",
+      },
+    },
+  },
 ];

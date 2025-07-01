@@ -14,10 +14,10 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Responses starter app",
-  description: "Starter app for the OpenAI Responses API",
+  title: "SMS Campaign Builder - Powered by Semaphore",
+  description: "Create targeted SMS campaigns with AI-powered generation and compliance checking",
   icons: {
-    icon: "/openai_logo.svg",
+    icon: "/semaphore_logo.svg",
   },
 };
 
