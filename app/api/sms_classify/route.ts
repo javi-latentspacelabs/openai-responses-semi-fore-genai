@@ -61,7 +61,7 @@ Example response:
     let classification;
     try {
       classification = JSON.parse(classificationText);
-    } catch (parseError) {
+    } catch {
       // If JSON parsing fails, create a basic classification
       classification = {
         categories: ["Informational"],
